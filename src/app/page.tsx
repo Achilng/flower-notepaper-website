@@ -14,6 +14,8 @@ import {
   Star,
 } from "lucide-react";
 
+import FallingPetals from "./FallingPetals";
+
 function GithubIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -134,6 +136,7 @@ function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden noise-bg">
       <div className="absolute inset-0 bg-gradient-to-b from-bamboo-mist/60 via-paper to-paper" />
+      <FallingPetals />
 
       <Petal
         className="absolute top-[15%] left-[10%] h-20 w-20 text-bamboo animate-float"
